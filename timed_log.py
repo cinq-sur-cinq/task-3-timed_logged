@@ -26,7 +26,7 @@ def timed_logged (func):
         print(f"docs: {func.__doc__}") #adding docs
         print(f"args: args={args}, kwargs={kwargs}")
         print(f"result: {result}")
-        print("execution time:" , elapsed_ms, "ms")
+        print(f"execution time: {elapsed_ms:.3f} ms")
         return result
     return wrapper
 
